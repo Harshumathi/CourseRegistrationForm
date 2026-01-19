@@ -1,0 +1,132 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    width: 500px;
+    box-shadow: 10px 10px 30px rgb(55, 55, 245);
+    background: linear-gradient(to right, #52aced,#4888bb, #88a9c5);
+    color: white;
+    margin-bottom: 10px;
+}
+
+form{
+    margin: 50px auto;
+    width: 500px;
+}
+
+
+fieldset{
+   padding: 30px; 
+   border-radius: 10px;
+   margin-bottom: 25px;
+   border: 2px solid blue;
+   background: linear-gradient(to right, #52aced,#4888bb, #88a9c5);
+   box-shadow: 10px 10px 30px rgb(55, 55, 245);
+}
+
+.borders
+{
+    border: 2px solid rgb(215, 22, 22);
+    border-radius: 3px;
+    padding: 5px 5px;
+    margin: 5px;
+    background-color: rgb(246, 246, 251);
+}
+
+.btn
+{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pointers
+{
+    cursor: pointer;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover
+{
+    background-color: rgb(15, 224, 15);
+    border-color: rgb(15, 224, 15);
+    height: 30px;
+    width: 50px;
+}
+
+button[type="reset"]:hover
+{
+    background-color: red;
+    border-color: red;
+    height: 30px;
+    width: 50px;
+}
+
+.headline{
+    border: 1px solid blue;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: rgb(124, 128, 227);
+}
+
+.headline:hover{
+    padding: 7px 12px;
+}
+
+.label{
+    font-weight: bold;
+}
+
+.imp{
+    color: red;
+}
+
+.caption{
+    background-color: rgb(75, 216, 212);
+    padding: 3px 5px;
+    margin: 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+input:focus + .caption{
+    display: block;
+    background-color: rgb(75, 216, 212);
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin-right: 80px;
+}
+
+.valid, .invalid{
+    height: 20px;
+    width: 20px;
+    display: none;
+}
+
+input:focus:invalid ~ img.invalid{
+    display: inline;
+}
+
+input:focus:valid ~ img.valid{
+    display: inline;
+}
+
+input[type="radio"]:checked{
+    height: 15px ;
+    width: 15px;
+}
+
+input[type="radio"]:checked + label
+{
+    font-weight: bold;
+}

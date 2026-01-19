@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="glass">
+    <h1>Course Registration Form</h1>
+    <form action="">
+        <fieldset style="border-radius: 10px">
+        <table>
+            <legend class="headline"><b>Personal Details</b></legend>
+            <tr>
+                <td> <label for="fname" class="label">First Name:</label> <label class = "imp">*</label></td>
+                <td> <input type="text" class="borders" required name="fname" placeholder="Ex: Abc">
+                <p class="caption">Enter your First-Name</p></td>
+            </tr>
+            <tr>
+                <td><label for="lname" class="label" >Last Name:</label><label class = "imp">*</label></td>
+                <td><input type="text" class="borders" required name="lname" placeholder="Ex: H">
+                <p class="caption">Enter your Last-Name</p></td>
+            </tr>
+            <tr>
+                <td><label for="" class="label">Mobile Number:</label><label class = "imp">*</label></td>
+                <td><input type="tel" class="borders" required name="mobile" placeholder="Ex: +91 1234567890">
+                <p class="caption">Enter your Phn-Number</p></td>
+            </tr>
+            <tr>
+                <td><label for="email" class="label" >Email:</label><label class = "imp">*</label></td>
+                <td>
+                    <input type="email" required class="borders" name="email" placeholder="Ex: abc@gmail.com">
+                    <p class="caption">Enter your Email-Id</p>
+                    <img src="./assets/check-mark.png" alt="Correct" class="valid">
+                    <img src="./assets/cross.png" alt="in-Correct" class="invalid">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="" class="label">Password:</label><label class = "imp">*</label></td>
+                <td><input type="password" class="borders" required placeholder="min 5 character">
+                <p class="caption">Enter your password</p></td>
+            </tr>
+            <tr>
+                <td><label for="" class="label">Confirm Password:</label><label class = "imp">*</label></td>
+                <td><input type="password" class="borders" required placeholder="min 5 character">
+                <p class="caption">Re-type your password</p></td>
+            </tr>
+            <tr>
+                <td><label for="" class="label">DOB:</label></td>
+                <td><input type="date" required class="borders" >
+                <p class="caption">Enter your Date-of-Birth</p></td>
+            </tr>
+            <tr>
+                <td><label for="" class="label">Age:</label><label class = "imp">*</label></td>
+                <td><input type="number" min="18" max="60" class="borders" required>
+                <p class="caption">Enter your Age</p></td>
+            </tr>
+            <tr>
+                <td><label for="gender" class="label">Gender:</label><label class = "imp">*&nbsp;</label></td>
+                <td>
+                    <input type="radio" name="gender" value="Male" id="gender"><label for="" class="gen">Male</label>
+                    <input type="radio" name="gender" value="Female" id="gender"><label for="" class="gen">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="" class="label">Select Country:</label></td>
+                <td> 
+                    <select name="" id="countries" class="borders">
+                        <option value="India">---Select Country---</option>
+                        <option value="">India</option>
+                        <option value="">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="">Canada</option>
+                        <option value="">Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="" class="label" class="up"class="borders" required>Upload Picture</label><label class = "imp">*</label></td>
+                <td><input class = "pointers" type="file" multiple><br></td>
+            </tr>
+    </table> 
+    <div class ="btn">
+    <button type="reset" class = "pointers" class="clr" >Reset</button><br>
+    </div></fieldset>
+    
+<fieldset>
+    <legend class="headline"><b>Course Details</b></legend>
+    <table>
+        <tr>
+        <td>
+            <label for="" class="label" required>Select Course:</label><label class = "imp">*</label>
+        </td>
+        <td>
+            <select name="courses" id="courses" class="borders">
+            <option value="">---CourseName---</option>        
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="ReactJS">ReactJS</option>
+            <option value="NodeJS">NodeJS</option>  
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <td><label for="" class="label" required>Delivery Mode:</label><label class = "imp">* &nbsp;</label></td>
+            <td><input type="checkbox">Online
+        <input type="checkbox">Offline</td>
+        </tr>
+        <tr>
+            <td><label class="label">Comments:</label></td>
+        </tr>
+        </table> 
+        <textarea class="borders" style="resize: none" rows="4" cols="40"></textarea><br> 
+        <div class ="btn">
+        <input type="submit" class = "pointers" class = "sub" value="submit"> 
+    </div>    
+    </fieldset>
+    </form>
+    </div>
+</body>
+</html>
